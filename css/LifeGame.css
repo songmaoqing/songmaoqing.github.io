@@ -1,0 +1,44 @@
+/*游戏css设置*/
+
+body{  /*body设置*/
+    background-image: url("../pic/background.jpg"); /*背景*/
+    background-size: cover;
+}
+
+#gamebox{  /*游戏窗口设置*/
+    top: 20px;
+    width: 1000px;
+    height: 660px;
+    left: 50%;
+    margin-left: -650px;
+    position: absolute;
+    border-radius: 10px;
+    background-image: url("../pic/table.jpg");
+}
+
+#gameset {  /*菜单载体块的风格设置*/
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    margin-left: 370px;
+    height: 660px;
+    width: 300px;
+    background-color: mediumaquamarine;
+    border-radius: 7px;
+}
+
+.twoinline {
+	width: 60px;
+}
+
+.oneinline {
+	width: 120px;
+}
+
+.btn {
+	position: relative;
+	left: 50%;
+	margin-left: -50px;
+	width: 100px;
+	height: 25px;
+}
