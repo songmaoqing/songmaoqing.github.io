@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>生命游戏</title>
+	<link rel="stylesheet" type="text/css" href="css/LifeGame.css" />
+</head>
+<body>
+	<section id="gamebox">
+    </section>
+    <section id="gameset">
+		<fieldset id="info">
+			<legend>游戏状态</legend>
+			<label>演变次数：<input id="times" readonly="readonly">次</label>
+			</br></br>
+			<label>演变速度：<input id="speed" readonly="readonly">次/分</label>
+			</br></br>
+			<label>存活细胞：<input id="living" readonly="readonly">个</label>
+			</br></br>
+			<label>死亡细胞：<input id="dead" readonly="readonly">个</label>
+			</br></br>
+			<label>运行状态：<input id="runstate" readonly="readonly"></label>
+		</fieldset>
+		</br>
+		<fieldset id="init">
+			<legend>游戏初始化</legend>
+			<label>列数：<input id="row" class="twoinline" type="number" min="1" max="100" value="50"> 行数：<input id="line" class="twoinline" type="number" min="1" max="100" value="32"></label>
+			</br></br>
+			<label>创造细胞数：<input id="create" type="number" min="1" value="300" class="oneinline">个</label>
+			</br></br>
+			<label>演变速度：<input id="initspeed" type="number" min="1" max="180" value="240" class="oneinline">次/分</label>
+			</br></br>
+		    <button class="btn" id="initbtn">初始化</button>
+		</fieldset>
+		</br>
+		<fieldset id="control">
+			<legend>游戏控制</legend>
+			<label>您可以通过点击决定单个细胞的存活与死亡，游戏运行时此操作无效！</label>
+			</br></br>
+			<label>速度控制：<input id="speedcontrol" type="number" min="1" max="720" value="60" class="oneinline">次/分</label>
+			</br></br>
+		    <button class="btn" id="startbtn">运行</button>
+		    </br></br>
+		    <button class="btn" id="nextbtn">下一次变化</button>
+		    </br></br>
+		    <button class="btn" id="emptybtn">清空界面</button>
+		</fieldset>
+    </section>
+	<script type="text/javascript" language="JavaScript" src="js/jquery-3.0.0.min.js"></script>
+    <script type="text/javascript" language="javascript" src="js/LifeGame.js"></script>
+</body>
+</html>
